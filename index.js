@@ -14,9 +14,21 @@ app.get('/Bhanu', (req, res) => res.send('my name is Bhanu!'))
 
 
 // name add
-app.get('/something', (req, res) => {
+app.get('/gol', (req, res) => {
   //req.query.color1 === 'red'  // true
   //req.query.color2 === 'blue' // true
+  var number = req.query.number;
+
+  if (number > 10) {
+    res.send('greater than 10')
+  } else {
+    res.send('greater less than 10')
+  }
+
+})
+
+// name add
+app.get('/something', (req, res) => {
   var favcolor = req.query.color1;
   var notFav = req.query.color2;
   console.log(req.query);
