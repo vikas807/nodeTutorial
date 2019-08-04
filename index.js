@@ -10,5 +10,17 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/bye', (req, res) => res.send('Bye World!'))
 
 
+// name add
+app.get('/something', (req, res) => {
+  //req.query.color1 === 'red'  // true
+  //req.query.color2 === 'blue' // true
+  var favcolor = req.query.color1;
+  var notFav = req.query.color2;
+  console.log(req.query);
+  var response = "my fav color is" + favcolor + " not fav color is " + notFav;
+  res.send(response);
+})
+
+
 // running the app
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
