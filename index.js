@@ -4,13 +4,13 @@ const app = express()
 const port = 3000
 
 // this is api
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Hello Jenkins world'))
 
 // bye world
 app.get('/bye', (req, res) => res.send('Bye World!'))
 
-// my name is Bhanu
-app.get('/Bhanu', (req, res) => res.send('my name is Bhanu!'))
+// my name is vikas
+app.get('/vikas', (req, res) => res.send('my name is vikas!'))
 
 
 // name add
