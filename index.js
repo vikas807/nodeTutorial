@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 // this is api
-app.get('/', (req, res) => res.send('Hello My friend'))
+app.get('/', (req, res) => res.send('Hello My friends'))
 
 // bye world
 app.get('/bye', (req, res) => res.send('Bye World!'))
